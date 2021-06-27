@@ -1,5 +1,5 @@
 FROM ubuntu:20.04
-
+WORKDIR /usr/src/app
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update ; apt-get install -y git python3 python3-pip build-essential
 RUN echo y | apt-get install locales
