@@ -1,7 +1,7 @@
-FROM lzzy12/mega-sdk-python:latest
+FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive
-RUN apt-get update ; apt-get install git
+RUN apt-get update ; apt-get install -y git python3 build-essential
 RUN echo y | apt-get install locales
 RUN pip3 install setuptools wheel
 
